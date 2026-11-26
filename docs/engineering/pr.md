@@ -4,6 +4,8 @@
 
 The summary is a visual, not a paragraph. A default PR body describes the diff in prose. This one picks the **smallest view** that makes the key point clear (pseudocode, a call tree, a component tree, a file tree, a Mermaid diagram, or a shaped diff) and keeps the words around it brief. The reviewer already has the diff open, so the body shows them its shape before they read it.
 
+Submitting, marking ready, or merging a PR follows any workspace workflow authorization rules.
+
 ## When to reach for it
 
 Type `/pr`, or the agent reaches for it automatically whenever it is writing a PR body.

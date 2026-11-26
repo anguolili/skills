@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 Implement the work described by the user in the spec or tickets.
 
+Load the `workflow-authorization` skill if available, and follow any workflow authorization rules in the active instructions. Apply them when starting implementation and when handing off the reviewed work.
+
 If the user passes a ticket reference, fetch it from the issue tracker and state its title before starting. If the reference is ambiguous, ask.
 
 Call the Skill tool with "tdd" where possible, at pre-agreed seams.

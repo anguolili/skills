@@ -9,6 +9,8 @@ metadata:
     url: "https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md"
 ---
 
+Load the `workflow-authorization` skill if available, and follow any workflow authorization rules in the active instructions. Apply them before submitting, marking ready, or merging a PR as part of the task.
+
 Use this template for writing the PR body:
 
 ```markdown
