@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 
+Load the `workflow-authorization` skill if available, and follow any workflow authorization rules in the active instructions. Check them before publishing the spec.
+
 The issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.
 
 ## Process

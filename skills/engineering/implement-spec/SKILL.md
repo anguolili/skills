@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 You have been provided a spec. This spec should have tickets associated with it, describing how to implement the spec.
 
+Load the `workflow-authorization` skill if available, and follow any workflow authorization rules in the active instructions. Apply them before starting implementation, opening or marking a PR ready, or resolving tickets. Pass the relevant instructions to implementer and merger subagents.
+
 The issue tracker should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.
 
 The goal is the entire spec implemented on a single **integration branch**, with every ticket resolved the way the issue tracker closes work.
@@ -37,6 +39,6 @@ Communication to and from subagents should be sparse. Communicate primarily thro
 
 7. Once all tickets are complete, call the Skill tool with `code-review` on the integration branch. Fix all issues raised by the code review in a single fresh **implementer subagent**.
 
-8. If a draft PR exists, mark it ready for review. Otherwise, resolve each ticket the way the issue tracker closes work, and report the integration branch.
+8. If a draft PR exists, mark it ready for review. Otherwise, resolve each ticket the way the issue tracker closes work, and report the integration branch. Follow the discovered rules for further delivery actions.
 
 9. Clean up all **implementer subagent** worktrees.
